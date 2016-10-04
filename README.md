@@ -1,9 +1,7 @@
 
 # addresses
 
-[![Build Status](https://travis-ci.org/hmrc/addresses.svg?branch=master)](https://travis-ci.org/hmrc/addresses) [ ![Download](https://api.bintray.com/packages/hmrc/releases/addresses/images/download.svg) ](https://bintray.com/hmrc/releases/addresses/_latestVersion)
-
-This provides simple core postal address data structures and supporting manipulation functions.
+This has been merged into [address-reputation-store](https://github.com/hmrc/address-reputation-store).
 
 ### License
 
