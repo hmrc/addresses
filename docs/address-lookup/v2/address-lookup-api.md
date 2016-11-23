@@ -268,20 +268,9 @@ Response:
  - `Content-Type: application/json`
  - Expiry and cache control headers will be set appropriately.
  - The body will be a JSON array containing *zero or more* BFPO Address Response Objects.
-   [Example response](bfpo-response-sample1.json).
+   [Example response](../bfpo-response-sample1.json).
 
-The response format, in [Orderly](http://orderly-json.org/), is:
-
-```
-object {
-	string operation?;
-	array [ string ] lines;
-	string postcode;
-	string bfpoNo;
-}
-```
-
-and the equivalent Scala representation might be
+The response format can be represented as a Scala case-class thus:
 
 ```
 case class BFPO(operation: Option[String], lines: List[String], postcode: String, bfpoNo: String)

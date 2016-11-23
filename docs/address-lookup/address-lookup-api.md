@@ -7,8 +7,8 @@ and ambiguities.
 
 There are currently two API versions:
 
- * [v1](v1/address-lookup-api.md) - v1 is now deprecated
- * [v2](v2/address-lookup-api.md) - v2 has a more uniform response document
+ * [~~v1~~](v1/address-lookup-api.md) - v1 is now deprecated
+ * [**v2**](v2/address-lookup-api.md) - v2 has a more uniform response document
 
 All new development should use the latest version available.
 
