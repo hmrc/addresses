@@ -1,7 +1,10 @@
 
 # addresses
 
-This has been merged into [address-reputation-store](https://github.com/hmrc/address-reputation-store).
+This repo contains documentation for the Address Lookup microservice, a.k.a. `address-lookup`. Please refer to 
+[the address-lookup API definition](docs/address-lookup-api.md).
+
+Other code that was here has been merged into [address-reputation-store](https://github.com/hmrc/address-reputation-store).
 
 ### License
 
