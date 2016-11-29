@@ -277,6 +277,7 @@ Query params:
  - `line4` (optional): the fourth line of the input address
  - `town` (optional): the name of the town in the input address, if not included in lines 1-4
  - `postcode` (optional) in the usual Royal Mail format, all uppercase. The internal space may be omitted.
+ - `limit` (optional) a positive integer that constrains the number of matching addresses found (this reduces server load considerably).
 
 Status codes:
 
