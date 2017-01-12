@@ -238,7 +238,7 @@ URL:
 
 Example URL:
 
- - `{contextPath}/v2/uk/addresses?outtcode=AA1+1ZZ&filter=The+Rectory`
+ - `{contextPath}/v2/uk/addresses?outcode=AA1+1ZZ&filter=The+Rectory`
 
 Methods:
 
