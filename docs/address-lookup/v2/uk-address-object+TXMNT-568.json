@@ -43,10 +43,26 @@
                     "pattern": "^[A-Z]{1,2}[0-9][0-9A-Z]? [0-9][A-Z]{2}$"
                 },
                 "subdivision": {
-                    "description": "the ISO3166-2 subdivision - these are home nations, regions, departments, states, länder etc as appropriate",
-                    "type": "string",
-                    "minLength": 2,
-                    "maxLength": 6
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "description": "the ISO3166-2 subdivision - these are home nations, regions, departments, states, länder etc as appropriate",
+                            "type": "string",
+                            "minLength": 2,
+                            "maxLength": 6
+                        },
+                        "name": {
+                            "description": "printable name of the country",
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 35
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "code",
+                        "name"
+                    ]
                 },
                 "country": {
                     "type": "object",
@@ -98,6 +114,16 @@
                 "code",
                 "name"
             ]
+        },
+        "location": {
+            "type": "array",
+            "items": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180,
+                "minItems": 2,
+                "maxItems": 2
+            }
         },
         "language": {
             "description": "ISO639-1 code, e.g. 'en' for English",

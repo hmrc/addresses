@@ -1,132 +1,132 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "properties": {
-    "id": {
-      "type": "string",
-      "minLength": 1,
-      "maxLength": 40
-    },
-    "uprn": {
-      "description": "Unique property reference number, up to 12 digits",
-      "type": "number",
-      "minimum": 0
-    },
-    "address": {
-      "description": "Contains a UK-based address",
-      "type": "object",
-      "properties": {
-        "lines": {
-          "type": "array",
-          "items": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
             "type": "string",
             "minLength": 1,
-            "maxLength": 35
-          },
-          "minLength": 1,
-          "maxLength": 3
+            "maxLength": 40
         },
-        "town": {
-          "type": "string",
-          "minLength": 1,
-          "maxLength": 35
+        "uprn": {
+            "description": "Unique property reference number, up to 12 digits",
+            "type": "number",
+            "minimum": 0
         },
-        "county": {
-          "description": "ceremonial county",
-          "type": "string",
-          "minLength": 1,
-          "maxLength": 35
-        },
-        "postcode": {
-          "description": "the outcode, incode combination specified for the UK by Royal Mail",
-          "type": "string",
-          "pattern": "^[A-Z]{1,2}[0-9][0-9A-Z]? [0-9][A-Z]{2}$"
-        },
-        "subdivision": {
-          "type": "object",
-          "properties": {
-            "code": {
-              "description": "the ISO3166-2 subdivision - these are home nations, regions, departments, states, länder etc as appropriate",
-              "type": "string",
-              "minLength": 2,
-              "maxLength": 6
+        "address": {
+            "description": "Contains a UK-based address",
+            "type": "object",
+            "properties": {
+                "lines": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 35
+                    },
+                    "minLength": 1,
+                    "maxLength": 3
+                },
+                "town": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 35
+                },
+                "county": {
+                    "description": "ceremonial county",
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 35
+                },
+                "postcode": {
+                    "description": "the outcode, incode combination specified for the UK by Royal Mail",
+                    "type": "string",
+                    "pattern": "^[A-Z]{1,2}[0-9][0-9A-Z]? [0-9][A-Z]{2}$"
+                },
+                "subdivision": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "description": "the ISO3166-2 subdivision - these are home nations, regions, departments, states, länder etc as appropriate",
+                            "type": "string",
+                            "minLength": 2,
+                            "maxLength": 6
+                        },
+                        "name": {
+                            "description": "printable name of the country",
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 35
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "code",
+                        "name"
+                    ]
+                },
+                "country": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "description": "UK Country Register 2-letter code (like ISO3166-1), e.g. 'GB' (note that 'GB' is the official code for UK although 'UK' is an official synonym and may be used instead)",
+                            "type": "string",
+                            "minLength": 2,
+                            "maxLength": 2
+                        },
+                        "name": {
+                            "description": "printable name of the country",
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 35
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "code",
+                        "name"
+                    ]
+                }
             },
-            "name": {
-              "description": "printable name of the country",
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 35
-            }
-          },
-          "additionalProperties": false,
-          "required": [
-            "code",
-            "name"
-          ]
+            "additionalProperties": false,
+            "required": [
+                "lines",
+                "town",
+                "postcode",
+                "country"
+            ]
         },
-        "country": {
-          "type": "object",
-          "properties": {
-            "code": {
-              "description": "UK Country Register 2-letter code (like ISO3166-1), e.g. 'GB' (note that 'GB' is the official code for UK although 'UK' is an official synonym and may be used instead)",
-              "type": "string",
-              "minLength": 2,
-              "maxLength": 2
+        "localCustodian": {
+            "description": "The local custodian responsible for this address",
+            "type": "object",
+            "properties": {
+                "code": {
+                    "description": "UK Local Custodian Code",
+                    "type": "number",
+                    "minimum": 0
+                },
+                "name": {
+                    "description": "Name of the UK Local Custodian",
+                    "type": "string",
+                    "minLength": 1
+                }
             },
-            "name": {
-              "description": "printable name of the country",
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 35
-            }
-          },
-          "additionalProperties": false,
-          "required": [
-            "code",
-            "name"
-          ]
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "lines",
-        "town",
-        "postcode",
-        "country"
-      ]
-    },
-    "localCustodian": {
-      "description": "The local custodian responsible for this address",
-      "type": "object",
-      "properties": {
-        "code": {
-          "description": "UK Local Custodian Code",
-          "type": "number",
-          "minimum": 0
+            "required": [
+                "code",
+                "name"
+            ]
         },
-        "name": {
-          "description": "Name of the UK Local Custodian",
-          "type": "string",
-          "minLength": 1
+        "language": {
+            "description": "ISO639-1 code, e.g. 'en' for English",
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 2
         }
-      },
-      "required": [
-        "code",
-        "name"
-      ]
     },
-    "language": {
-      "description": "ISO639-1 code, e.g. 'en' for English",
-      "type": "string",
-      "minLength": 2,
-      "maxLength": 2
-    }
-  },
-  "additionalProperties": false,
-  "required": [
-    "id",
-    "uprn",
-    "address",
-    "language"
-  ]
+    "additionalProperties": false,
+    "required": [
+        "id",
+        "uprn",
+        "address",
+        "language"
+    ]
 }

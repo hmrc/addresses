@@ -1,26 +1,26 @@
 {
-  "id": "GB200000706253",
-  "uprn": 200000706253,
-  "address": {
-    "lines": [
-      "Hunters House",
-      "The Copse"
-    ],
-    "town": "Romsey",
-    "county": "Hampshire",
-    "postcode": "SO51 7UR",
-    "subdivision": {
-      "code": "GB-ENG",
-      "name": "England"
+    "id": "GB200000706253",
+    "uprn": 200000706253,
+    "address": {
+        "lines": [
+            "Hunters House",
+            "The Copse"
+        ],
+        "town": "Romsey",
+        "county": "Hampshire",
+        "postcode": "SO51 7UR",
+        "subdivision": {
+            "code": "GB-ENG",
+            "name": "England"
+        },
+        "country": {
+            "code": "UK",
+            "name": "United Kingdom"
+        }
     },
-    "country": {
-      "code": "UK",
-      "name": "United Kingdom"
-    }
-  },
-  "localCustodian": {
-    "code": 1760,
-    "name": "Test Valley"
-  },
-  "language": "en"
+    "localCustodian": {
+        "code": 1760,
+        "name": "Test Valley"
+    },
+    "language": "en"
 }

@@ -9,7 +9,10 @@
         "town": "Romsey",
         "county": "Hampshire",
         "postcode": "SO51 7UR",
-        "subdivision": "GB-ENG",
+        "subdivision": {
+            "code": "GB-ENG",
+            "name": "England"
+        },
         "country": {
             "code": "UK",
             "name": "United Kingdom"
@@ -19,5 +22,9 @@
         "code": 1760,
         "name": "Test Valley"
     },
+    "location": [
+        50.9986451,
+        -1.4690977
+    ],
     "language": "en"
 }

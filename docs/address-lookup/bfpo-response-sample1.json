@@ -1,6 +1,10 @@
-[{
-  "operation": "Op ATALANTA",
-  "lines": ["Djibouti"],
-  "postcode": "BF1 4TW",
-  "bfpoNo": "496"
-}]
+[
+    {
+        "operation": "Op ATALANTA",
+        "lines": [
+            "Djibouti"
+        ],
+        "postcode": "BF1 4TW",
+        "bfpoNo": "496"
+    }
+]
