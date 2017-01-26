@@ -22,5 +22,9 @@
         "code": 1760,
         "name": "Test Valley"
     },
+    "location": [
+        50.9986451,
+        -1.4690977
+    ],
     "language": "en"
 }
