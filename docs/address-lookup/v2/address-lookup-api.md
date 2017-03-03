@@ -1,6 +1,19 @@
 Address Lookup Microservice API (v2)
 ====================================
 
+## AWS Hosted Demo Environment ##
+
+A demo of the Address Lookup Microservice has been deployed on AWS and
+is publicly available. If you want to kick the tyres on the demo you
+will need to acquire a username and password and use basic auth with
+your http clients for all requests to the service.
+
+The base URL for the public demo is:
+https://txm-al-demo.tax.service.gov.uk/
+
+Please email [craig.pointon@digital.hmrc.gov.uk](mailto:craig.pointon@digital.hmrc.gov.uk)
+for a username password to test the service.
+
 ## What's Changed in v2
 
 There is a minor change in the response schema. Now, country and subdivision are both represented in the same way, i.e. with a `{code,name}` object.
