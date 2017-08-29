@@ -1,14 +1,7 @@
 Address Lookup Microservice API (v2)
 ====================================
 
-## API Demo Environment - [UK Government Organisations](https://www.gov.uk/government/organisations) ##
-
-A demo of the Address Lookup Microservice is available to UK Government Organisations only. If you'd like to **test** the API, you will need to acquire a username and password and use basic auth with your http clients for all requests to the service.
-
-The base URL for the public demo is:
-https://txm-al-demo.tax.service.gov.uk/
-
-In order to gain access/test the API, please email David Crebbin [david.crebbin@digital.hmrc.gov.uk](mailto:david.crebbin@digital.hmrc.gov.uk), providing a breif introduction as to your reason for interest and which Government Organisation you represent.
+If you're a UK Government Organisation wanting additional information on this service, please email David Crebbin [david.crebbin@digital.hmrc.gov.uk](mailto:david.crebbin@digital.hmrc.gov.uk).
 
 ## What's Changed in v2
 
