@@ -1,7 +1,7 @@
 Address Lookup Microservice API (v2)
 ====================================
 
-If you're a UK Government Organisation wanting additional information on this service, please email David Crebbin [david.crebbin@digital.hmrc.gov.uk](mailto:david.crebbin@digital.hmrc.gov.uk).
+If you're a UK Government Organisation wanting additional information on this service, please email Sonia Peterson [sonia.peterson1@digital.hmrc.gov.uk](mailto:sonia.peterson1@digital.hmrc.gov.uk).
 
 ## What's Changed in v2
 
